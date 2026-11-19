@@ -1,6 +1,6 @@
-# Ufuq (Ø£ÙÙ‚): MVP Plan, Epics and Stories (v9)
+# Ufuq (أفق): MVP Plan, Epics and Stories (v9)
 
-> **Product name:** Ufuq (Ø£ÙÙ‚), selected from the shortlist in Appendix A. Trademark, domain, and handle checks are still pending (name clearance outstanding; see Open Decisions).
+> **Product name:** Ufuq (أفق), selected from the shortlist in Appendix A. Trademark, domain, and handle checks are still pending (name clearance outstanding; see Open Decisions).
 > **Purpose:** Product definition, ordered epics and stories, and reference material for the MVP.
 > **Convention:** **[Proposed]** = recommended default awaiting confirmation. **[Decision]** = locked.
 
@@ -45,7 +45,7 @@ A PDF summarizer, a quiz or flashcard generator, a document chat interface, or a
 
 | Area | Decision |
 |---|---|
-| Product name | Ufuq (Ø£ÙÙ‚), pending clearance checks |
+| Product name | Ufuq (أفق), pending clearance checks |
 | Audience | All ages (subject to the age policy; undecided — see Open Decisions) |
 | Source | PDF uploads only |
 | Experience | Combination of visual formats and interactions, chosen by AI |
@@ -827,43 +827,43 @@ Used by the evaluation harness (E5-S14) and regression gate (E8-S7).
 
 ## Appendix A: Name Candidates
 
-**Selected: Ufuq (Ø£ÙÙ‚)**, meaning "horizon": the edge of what you can see, and what a learner explores toward. The earlier working title "Lerno" was dropped because it reads as a misspelling of "learn". Trademark, domain, and handle checks have not yet been run for Ufuq or any other name below.
+**Selected: Ufuq (أفق)**, meaning "horizon": the edge of what you can see, and what a learner explores toward. The earlier working title "Lerno" was dropped because it reads as a misspelling of "learn". Trademark, domain, and handle checks have not yet been run for Ufuq or any other name below.
 
 ### English-first
 
 | Name | Idea | Arabic rendering |
 |---|---|---|
-| Curio | Curiosity | ÙƒÙˆØ±ÙŠÙˆ |
-| Unfold | A PDF unfolds into an experience | Ø£Ù†ÙÙˆÙ„Ø¯ |
-| Wonderly | Wonder + learning | ÙˆØ§Ù†Ø¯Ø±Ù„ÙŠ |
-| Pagelands | Pages become places to explore | Ø¨ÙŠØ¬Ù„Ø§Ù†Ø¯Ø² |
-| Inkling | A first glimmer of understanding | Ø¥Ù†ÙƒÙ„Ù†Øº |
-| Fathom | To understand deeply | ÙØ§Ø«ÙˆÙ… |
-| Glimmer | A spark of insight | ØºÙ„ÙŠÙ…Ø± |
-| Prism | One document, many views | Ø¨Ø±ÙŠØ²Ù… |
-| Orbit | Exploring around a topic | Ø£ÙˆØ±Ø¨Øª |
-| Trailhead | Where an exploration begins | ØªØ±ÙŠÙ„Ù‡ÙŠØ¯ |
-| Bloomly | Ideas that grow | Ø¨Ù„ÙˆÙ…Ø§Ù„ÙŠ |
-| Aha | The moment of understanding | Ø¢Ù‡Ø§ |
-| Tinker | Hands-on learning | ØªÙŠÙ†ÙƒØ± |
-| Mosaic | Pieces forming a picture | Ù…ÙˆØ²Ø§ÙŠÙŠÙƒ |
-| Atlas | A map of knowledge | Ø£Ø·Ù„Ø³ |
-| Lumio | Light and insight (likely collides with an existing product) | Ù„ÙˆÙ…ÙŠÙˆ |
+| Curio | Curiosity | كوريو |
+| Unfold | A PDF unfolds into an experience | أنفولد |
+| Wonderly | Wonder + learning | واندرلي |
+| Pagelands | Pages become places to explore | بيجلاندز |
+| Inkling | A first glimmer of understanding | إنكلنغ |
+| Fathom | To understand deeply | فاثوم |
+| Glimmer | A spark of insight | غليمر |
+| Prism | One document, many views | بريزم |
+| Orbit | Exploring around a topic | أوربت |
+| Trailhead | Where an exploration begins | تريلهيد |
+| Bloomly | Ideas that grow | بلومالي |
+| Aha | The moment of understanding | آها |
+| Tinker | Hands-on learning | تينكر |
+| Mosaic | Pieces forming a picture | موزاييك |
+| Atlas | A map of knowledge | أطلس |
+| Lumio | Light and insight (likely collides with an existing product) | لوميو |
 
 ### Arabic-meaning or bilingual-friendly
 
 | Name | Meaning | Latin form |
 |---|---|---|
-| ÙÙ‡Ù… | Understanding | Fahm |
-| Ø¥Ø¯Ø±Ø§Ùƒ | Perception, realizing | Idrak |
-| Ø£ÙÙ‚ | Horizon | Ufuq |
-| Ù…Ø´ÙƒØ§Ø© | A niche holding a lamp; light | Mishkat |
-| ÙƒØ´Ù‘Ø§Ù | Scout or explorer | Kashaf |
-| Ø¯Ù„ÙŠÙ„ | Guide | Dalil |
-| Ù†Ø¨Ø±Ø§Ø³ | Lantern, guiding light | Nibras |
-| Ø¨ØµÙŠØ±Ø© | Insight | Basira |
-| Ø´Ø±Ø§Ø±Ø© | Spark | Shirara |
-| Ø±Ø­Ù„Ø© | Journey | Rihla |
+| فهم | Understanding | Fahm |
+| إدراك | Perception, realizing | Idrak |
+| أفق | Horizon | Ufuq |
+| مشكاة | A niche holding a lamp; light | Mishkat |
+| كشّاف | Scout or explorer | Kashaf |
+| دليل | Guide | Dalil |
+| نبراس | Lantern, guiding light | Nibras |
+| بصيرة | Insight | Basira |
+| شرارة | Spark | Shirara |
+| رحلة | Journey | Rihla |
 
 ### Selection criteria
 
