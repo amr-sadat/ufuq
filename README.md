@@ -1,5 +1,7 @@
 # ufuq
 
+<img src="brand/ufuq-logo.svg" alt="Ufuq logo" width="330">
+
 **Ufuq (أفق)** turns PDFs into interactive learning experiences.
 
 A learner uploads a document. Ufuq understands it, identifies the concepts that matter, teaches each one in a format that fits it, and keeps every explanation grounded in the source pages. The learner explores an interactive experience instead of passively rereading or scanning a summary.
