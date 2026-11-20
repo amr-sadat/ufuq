@@ -14,7 +14,8 @@ export interface AppMessages {
 export const MESSAGES: Record<Language, AppMessages> = {
   en: {
     title: 'Learning, grounded in your source.',
-    intro: 'Add a source document and explore an experience grounded in its pages.',
+    intro:
+      'Add a source document and explore an experience grounded in its pages.',
     checking: 'Checking API',
     connected: 'API connected',
     unavailable: 'API unavailable',
