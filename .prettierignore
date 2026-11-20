@@ -4,6 +4,6 @@
 /.nx/cache
 /.nx/workspace-data
 .angular
-pnpm-lock.yaml
-
+package-lock.json
+Ufuq_MVP_Plan.md
 .nx/self-healing

@@ -1044,7 +1044,7 @@ Rules:
 | Frontend | Angular + TypeScript (standalone components, signals), Angular CDK |
 | Backend | NestJS + TypeScript |
 | API | REST (JSON), OpenAPI generated from NestJS, typed Angular client generated in CI |
-| Monorepo | Nx (with pnpm) |
+| Monorepo | Nx (with npm) |
 | Styling | Tailwind CSS with logical properties |
 | UI | Custom design system (`libs/web/ui`) |
 | Database | PostgreSQL + Prisma |

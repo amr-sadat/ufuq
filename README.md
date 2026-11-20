@@ -17,7 +17,7 @@ A learner uploads a document. Ufuq understands it, identifies the concepts that 
 
 ## Development
 
-The repo is an Nx monorepo using pnpm.
+The repo is an Nx monorepo using npm.
 
 ```text
 apps/
@@ -33,10 +33,10 @@ libs/
 Common commands:
 
 ```bash
-pnpm install                 # install dependencies
-pnpm nx serve web            # start web (also starts the API)
-pnpm nx affected -t lint test typecheck build
-pnpm nx e2e web-e2e          # run Playwright tests
+npm install                  # install dependencies
+npm exec nx serve web        # start web (also starts the API)
+npm exec nx affected -t lint test typecheck build
+npm exec nx e2e web-e2e      # run Playwright tests
 ```
 
 `shared/schema` is the single source of truth for API contracts. Both apps

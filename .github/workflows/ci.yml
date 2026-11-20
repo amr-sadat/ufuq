@@ -19,28 +19,26 @@ jobs:
           filter: tree:0
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
-
       - uses: actions/setup-node@v5
         with:
           node-version: 24
-          cache: pnpm
+          cache: npm
 
       - uses: actions/cache@v4
         with:
           path: .nx/cache
-          key: ${{ runner.os }}-nx-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
+          key: ${{ runner.os }}-nx-${{ hashFiles('package-lock.json') }}-${{ github.sha }}
           restore-keys: |
-            ${{ runner.os }}-nx-${{ hashFiles('pnpm-lock.yaml') }}-
+            ${{ runner.os }}-nx-${{ hashFiles('package-lock.json') }}-
 
-      - run: pnpm install --frozen-lockfile
+      - run: npm ci
 
       - uses: nrwl/nx-set-shas@v4
 
-      - run: pnpm exec nx format:check --base=$NX_BASE --head=$NX_HEAD
+      - run: npx nx format:check --base=$NX_BASE --head=$NX_HEAD
 
-      - run: pnpm exec nx affected -t lint test typecheck build --base=$NX_BASE --head=$NX_HEAD --parallel=3
+      - run: npx nx affected -t lint test typecheck build --base=$NX_BASE --head=$NX_HEAD --parallel=3
 
-      - run: pnpm exec playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium
 
-      - run: pnpm exec nx affected -t e2e --base=$NX_BASE --head=$NX_HEAD
+      - run: npx nx affected -t e2e --base=$NX_BASE --head=$NX_HEAD

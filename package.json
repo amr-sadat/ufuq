@@ -78,10 +78,7 @@
     "webpack-cli": "^7.0.0",
     "webpack-dev-server": "^5.2.1"
   },
-  "packageManager": "pnpm@10.34.9",
-  "pnpm": {
-    "overrides": {
-      "@angular-devkit/architect": "0.2202.8"
-    }
+  "overrides": {
+    "@angular-devkit/architect": "0.2202.8"
   }
 }

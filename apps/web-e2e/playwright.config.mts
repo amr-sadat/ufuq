@@ -32,7 +32,7 @@ export default defineConfig({
   },
   webServer: {
     // `web:serve` depends on `api:serve`, so the proxy has a live API to reach.
-    command: 'pnpm exec nx run web:serve',
+    command: 'npx nx run web:serve',
     // The proxy only returns 200 once both the dev server and the API are up.
     url: `${baseURL}/v1/health`,
     reuseExistingServer: !process.env['CI'],
