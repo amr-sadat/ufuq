@@ -12,3 +12,33 @@ A learner uploads a document. Ufuq understands it, identifies the concepts that 
 ---
 
 🚧 **Early stage** — the product is in pre-launch preparation. The name "Ufuq" (أفق, "horizon") is selected, pending trademark, domain, and handle clearance.
+
+---
+
+## Development
+
+The repo is an Nx monorepo using npm.
+
+```text
+apps/
+  web/        Angular app
+  web-e2e/    Playwright end-to-end tests
+  api/        NestJS API
+libs/
+  shared/     Zod schema and EN/AR language foundation
+  web/        Design system and player components
+  eval/       AI evaluation sets and regression runner
+```
+
+Common commands:
+
+```bash
+npm install                  # install dependencies
+npm exec nx serve web        # start web (also starts the API)
+npm exec nx affected -t lint test typecheck build
+npm exec nx e2e web-e2e      # run Playwright tests
+```
+
+`shared/schema` is the single source of truth for API contracts. Both apps
+validate against it. Nx tags enforce module boundaries: `web` and `api` may only
+depend on their own scope and on `scope:shared` libraries.

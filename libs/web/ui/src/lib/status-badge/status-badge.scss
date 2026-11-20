@@ -1,0 +1,50 @@
+:host {
+  display: inline-flex;
+}
+
+.status-badge {
+  --status-color: var(--ufuq-color-neutral-600, #475569);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: var(--status-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.status-badge[data-status='ready'] {
+  --status-color: var(--ufuq-color-success, #15803d);
+}
+
+.status-badge[data-status='error'] {
+  --status-color: var(--ufuq-color-error, #b91c1c);
+}
+
+.status-badge__dot {
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.status-badge[data-status='loading'] .status-badge__dot {
+  animation: status-badge-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes status-badge-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-badge[data-status='loading'] .status-badge__dot {
+    animation: none;
+  }
+}

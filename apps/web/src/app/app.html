@@ -1,0 +1,18 @@
+<main class="app-shell">
+  <header class="app-shell__header">
+    <p class="app-shell__brand">Ufuq</p>
+    <h1 class="app-shell__title">{{ messages().title }}</h1>
+    <p class="app-shell__intro">{{ messages().intro }}</p>
+
+    <button
+      class="app-shell__language"
+      type="button"
+      [attr.aria-label]="messages().languageLabel"
+      (click)="switchLanguage()"
+    >
+      {{ messages().languageName }}
+    </button>
+  </header>
+
+  <ufuq-status-badge [status]="status()" [label]="statusLabel()" />
+</main>

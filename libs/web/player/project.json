@@ -1,0 +1,10 @@
+{
+  "name": "web-player",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/web/player/src",
+  "prefix": "ufuq",
+  "projectType": "library",
+  "tags": ["scope:web", "type:feature"],
+  "// targets": "to see all targets run: nx show project web-player --web",
+  "targets": {}
+}

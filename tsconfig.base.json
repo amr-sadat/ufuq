@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2022", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@ufuq/shared/schema": ["./libs/shared/schema/src/index.ts"],
+      "@ufuq/shared/i18n": ["./libs/shared/i18n/src/index.ts"],
+      "@ufuq/eval": ["./libs/eval/src/index.ts"],
+      "@ufuq/web/ui": ["./libs/web/ui/src/index.ts"],
+      "@ufuq/web/player": ["./libs/web/player/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
