@@ -31,20 +31,20 @@
     "@eslint/js": "^9.8.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.0",
-    "@nx/angular": "24.0.0",
-    "@nx/devkit": "24.0.0",
-    "@nx/eslint": "24.0.0",
-    "@nx/eslint-plugin": "24.0.0",
-    "@nx/js": "24.0.0",
-    "@nx/nest": "24.0.0",
-    "@nx/node": "24.0.0",
-    "@nx/playwright": "24.0.0",
-    "@nx/rolldown": "24.0.0",
-    "@nx/vite": "24.0.0",
-    "@nx/vitest": "24.0.0",
-    "@nx/web": "24.0.0",
-    "@nx/webpack": "24.0.0",
-    "@nx/workspace": "24.0.0",
+    "@nx/angular": "24.0.6",
+    "@nx/devkit": "24.0.6",
+    "@nx/eslint": "24.0.6",
+    "@nx/eslint-plugin": "24.0.6",
+    "@nx/js": "24.0.6",
+    "@nx/nest": "24.0.6",
+    "@nx/node": "24.0.6",
+    "@nx/playwright": "24.0.6",
+    "@nx/rolldown": "24.0.6",
+    "@nx/vite": "24.0.6",
+    "@nx/vitest": "24.0.6",
+    "@nx/web": "24.0.6",
+    "@nx/webpack": "24.0.6",
+    "@nx/workspace": "24.0.6",
     "@oxc-project/runtime": "^0.115.0",
     "@playwright/test": "^1.36.0",
     "@schematics/angular": "~22.2.0",
@@ -63,7 +63,7 @@
     "jiti": "2.4.2",
     "jsdom": "~22.1.0",
     "jsonc-eslint-parser": "^2.1.0",
-    "nx": "24.0.0",
+    "nx": "24.0.6",
     "prettier": "^3.8.1",
     "rolldown": "^1.2.0",
     "supertest": "^7.1.4",
@@ -76,9 +76,28 @@
     "vitest": "^5.1.0",
     "webpack": "~5.110.0",
     "webpack-cli": "^7.0.0",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "6.1.0"
   },
   "overrides": {
-    "@angular-devkit/architect": "0.2202.8"
+    "@angular-devkit/architect": "0.2202.8",
+    "nx": {
+      "minimatch": "11.0.9"
+    },
+    "@nx/devkit": {
+      "minimatch": "11.0.9"
+    },
+    "@nx/playwright": {
+      "minimatch": "11.0.9"
+    },
+    "@nx/jest": {
+      "minimatch": "11.0.9"
+    },
+    "jest-config": {
+      "glob": "14.0.6"
+    },
+    "test-exclude": {
+      "glob": "14.0.6",
+      "minimatch": "11.0.9"
+    }
   }
 }
