@@ -1,0 +1,9 @@
+{
+  "name": "eval",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/eval/src",
+  "projectType": "library",
+  "tags": ["scope:api", "type:util"],
+  "// targets": "to see all targets run: nx show project eval --web",
+  "targets": {}
+}

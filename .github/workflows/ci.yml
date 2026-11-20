@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  affected:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - uses: actions/cache@v4
+        with:
+          path: .nx/cache
+          key: ${{ runner.os }}-nx-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-nx-${{ hashFiles('pnpm-lock.yaml') }}-
+
+      - run: pnpm install --frozen-lockfile
+
+      - uses: nrwl/nx-set-shas@v4
+
+      - run: pnpm exec nx format:check --base=$NX_BASE --head=$NX_HEAD
+
+      - run: pnpm exec nx affected -t lint test typecheck build --base=$NX_BASE --head=$NX_HEAD --parallel=3
+
+      - run: pnpm exec playwright install --with-deps chromium
+
+      - run: pnpm exec nx affected -t e2e --base=$NX_BASE --head=$NX_HEAD

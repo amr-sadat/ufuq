@@ -1,0 +1,11 @@
+packages:
+  - 'packages/*'
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - '@nx/nx-win32-x64-msvc'
+  - esbuild
+  - lmdb
+  - msgpackr-extract
+  - nx

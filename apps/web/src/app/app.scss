@@ -1,0 +1,51 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  inline-size: min(100% - 2rem, 64rem);
+  margin-inline: auto;
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+.app-shell__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-inline-size: 44rem;
+}
+
+.app-shell__brand {
+  margin: 0;
+  color: var(--ufuq-color-primary, #ca8a04);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.app-shell__title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.app-shell__intro {
+  margin: 0;
+  color: var(--ufuq-color-neutral-700, #334155);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.app-shell__language {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
